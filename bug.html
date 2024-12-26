@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Incorrect way to access an element's text content in older browsers
+    var text = document.getElementById("myDiv").innerText;
+    console.log(text); // May return unexpected results in some browsers
+  </script>
+</body>
+</html>
