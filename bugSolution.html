@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    // Correct way to access an element's text content using textContent
+    var text = document.getElementById("myDiv").textContent;
+    console.log(text); // Returns expected results across various browsers
+  </script>
+</body>
+</html>
